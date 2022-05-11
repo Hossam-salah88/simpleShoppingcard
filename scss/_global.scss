@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    direction: rtl;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+
+  // ==================== Layout ==============================
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    // small screan
+  
+    @media (max-width: 576px) {
+      max-width: 100%;; 
+    }
+  
+    @media (min-width: 768px) {
+      width: 720px; // 720px
+    }
+  
+    @media (min-width: 992px) {
+      width: 960px; // 960px
+    }
+  
+    @media (min-width: 1200px) {
+      width: 1140px; // 1140px
+    }
+  
+    @media (min-width: 1400px) {
+      width: 1320px; // 1320px
+    }
+}
+  

@@ -10,59 +10,87 @@
   <body>
     <section class="shoppingCart container">
       <h1 class="shoppingCart__title">shopping Cart</h1>
-      <div>
-        <form>
-          <div class="shoppingCart__content">
-            <label for="productName">Product Name: </label>
-            <input id="productName" required type="text" />
-          </div>
-
-          <div class="shoppingCart__content">
-            <label for="productCatogre">product Catogre: </label>
-            <input id="productCatogre" type="text" />
-          </div>
-
-          <div class="shoppingCart__content">
-            <label for="productQuantite">Product Quantite:</label>
-            <input type="number" id="productQuantite" />
-          </div>
-
-          <div class="shoppingCart__content">
-            <label for="productPrice">Product Price:</label>
-            <input type="number" id="productPrice" />
-          </div>
-
-          <div class="shoppingCart__content">
-            <label for="ProductDes">Product Description:</label>
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="7"
-              id="ProductDes"
-            ></textarea>
-          </div>
-          <input type="submit" value="Add Product" id="addProductBtn" />
-          <button>Clear</button>
-        </form>
-
-        <div>
-          <span>Index</span>
-          <span>Name</span>
-          <span>Catogre</span>
-          <span>Quantite</span>
-          <span>Price</span>
-          <span>Total Price</span>
-          <span>Discription</span>
-          <span>Increment</span>
-          <span>Decrement</span>
-          <span>Update</span>
-          <span>Delete</span>
+      <form class="shoppingCart__form">
+        <div class="shoppingCart__content">
+          <label for="productName">Product Name: </label>
+          <input id="productName" required type="text" />
         </div>
 
-        <div class="productCart" id="productCart"></div>
-      </div>
+        <div class="shoppingCart__content">
+          <label for="productCatogre">product Catogre: </label>
+          <input id="productCatogre" type="text" />
+        </div>
+
+        <div class="shoppingCart__content">
+          <label for="productQuantite">Product Quantite:</label>
+          <input type="number" id="productQuantite" />
+        </div>
+
+        <div class="shoppingCart__content">
+          <label for="productPrice">Product Price:</label>
+          <input type="number" id="productPrice" />
+        </div>
+
+        <div class="shoppingCart__content">
+          <label for="productDes">Product Description:</label>
+          <textarea name="" cols="0" rows="7" id="productDes"></textarea>
+        </div>
+        <button type="submit" value="Add Product" id="addProductBtn">
+          Add product
+        </button>
+        <button>Clear</button>
+      </form>
     </section>
+
+    <section class="productadd container">
+      <table>
+        <tr class="productadd__title">
+          <th>Index</th>
+          <th>Name</th>
+          <th>Catogre</th>
+          <th>Quantite</th>
+          <th>Price</th>
+          <th>Total Price</th>
+          <th>Increment</th>
+          <th>Decrement</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+        <tbody id="productadd__table"></tbody>
+      </table>
+    </section>
+
+    <!-- <section class="productadd container">
+      <div>
+        <ul class="productadd__title">
+          <li class="productadd__list">Index</li>
+          <li class="productadd__list">Name</li>
+          <li class="productadd__list">Catogre</li>
+          <li class="productadd__list">Quantite</li>
+          <li class="productadd__list">Price</li>
+          <li class="productadd__list">Total Price</li>
+          <li class="productadd__list">Increment</li>
+          <li class="productadd__list">Decrement</li>
+          <li class="productadd__list">Update</li>
+          <li class="productadd__list">Delete</li>
+        </ul>
+      </div>
+
+      <div id="productCart">
+        <ul class="productadd__item">
+          <li>1</li>
+          <li>Hossam</li>
+          <li>salah</li>
+          <li>20</li>
+          <li>30</li>
+          <li>40</li>
+          <li><button>+</button></li>
+          <li><button>-</button></li>
+          <li><button>Updata</button></li>
+          <li><button>Delete</button></li>
+        </ul>
+      </div>
+    </section> -->
     <script src="./script.js"></script>
   </body>
 </html>

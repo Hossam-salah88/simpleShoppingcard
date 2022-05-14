@@ -2,6 +2,14 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+  }
   
   a,
   a:visited,
@@ -13,16 +21,13 @@ html {
     margin: 0;
     padding: 0;
     outline: none;
-    direction: rtl;
   }
   
   ul {
     list-style: none;
   }
   
-  img {
-    max-width: 100%;
-  }
+
   
 
   // ==================== Layout ==============================
@@ -56,3 +61,4 @@ html {
     }
 }
   
+

@@ -43,6 +43,15 @@
     </section>
 
     <section class="productadd container">
+      <input
+        type="text"
+        onkeyup="searchProduct(this.value)"
+        id="search"
+        placeholder="Search"
+      />
+      <button onclick="payProduct()" class="paybtn" id="paybtn">
+        Pay Products
+      </button>
       <table>
         <tr class="productadd__title">
           <th>Index</th>

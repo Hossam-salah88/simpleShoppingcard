@@ -39,6 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     &__title th {
         padding: 10px;
@@ -51,4 +52,12 @@
         padding: 10px;
         text-align: center;
     }
+}
+
+.paybtn {
+    padding: 10px 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -17px;
+    right: 0;
 }

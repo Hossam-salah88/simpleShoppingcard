@@ -136,6 +136,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .productadd__title th {
@@ -148,5 +149,13 @@ ul {
 .productadd__title td {
   padding: 10px;
   text-align: center;
+}
+
+.paybtn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  position: absolute;
+  top: -17px;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */
